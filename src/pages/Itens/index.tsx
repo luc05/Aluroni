@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import cardapio from "./itens.json";
+import cardapio from "assets/dados/cardapio.json";
 import styles from "./Itens.module.scss";
 interface IProps {
     busca: string,
