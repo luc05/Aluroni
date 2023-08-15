@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import cardapio from "assets/dados/cardapio.json";
 import styles from "./Itens.module.scss";
+import { Cardapio } from "types/Prato";
+import cardapio from "data/cardapio.json";
 interface IProps {
     busca: string,
     filtro: number | null,
@@ -18,7 +19,7 @@ export default function Itens(props: IProps) {
     if (filtro !== null) return filtro === id;
     return true;
   }
-  function ordenar(novalista: typeof cardapio) {
+  function ordenar(novalista: Cardapio) {
     switch (ordenador) {
     case ("porcao"):
       return novalista.sort((a, b) => a.size > b.size ? 1 : -1);

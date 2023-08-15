@@ -1,5 +1,5 @@
 import styles from "./Item.module.scss";
-import cardapio from "assets/dados/cardapio.json";
+import cardapio from "data/cardapio.json";
 import classNames from "classnames";
 type Props = typeof cardapio[0]
 export default function Item(props : Props){
