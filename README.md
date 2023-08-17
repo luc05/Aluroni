@@ -55,4 +55,4 @@ Dados foram adicionados de forma estática através de um arquivo Json.
 Após clonar o projeto.
 1) npm i - baixa todas dependências necessárias.
 2) npm start - roda a aplicação.
-3) O código react utiliza a biblioteca ESLint que refatora o código de forma automática, basta usar o comando '''npx eslint ./src --fix'''
+3) O código react utiliza a biblioteca ESLint que identa o código de forma automática, de acordo as definições para o mesmo, basta usar o comando '''npx eslint ./src --fix'''
